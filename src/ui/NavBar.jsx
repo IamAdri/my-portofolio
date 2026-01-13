@@ -1,4 +1,4 @@
-import { Flex, Link, Tab, TabList, Tabs } from "@chakra-ui/react";
+import { Flex, Link } from "@chakra-ui/react";
 import { NavLink } from "react-router";
 
 function NavBar() {
@@ -19,7 +19,6 @@ function NavBar() {
       >
         About
       </Link>
-
       <Link
         as={NavLink}
         to="/mywork"

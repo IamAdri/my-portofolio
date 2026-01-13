@@ -31,9 +31,14 @@ function Homepage() {
     navigate("/mywork");
   };
   return (
-    <Flex my="155px" w="full" justify="center">
-      <Flex direction="column" w="850px" align="center" gap="55px">
-        <Flex gap="35px">
+    <Flex my="155px" w="full" justify="center" px="15px">
+      <Flex
+        direction="column"
+        maxW="850px"
+        align={{ base: "start", md: "center" }}
+        gap="55px"
+      >
+        <Flex gap="35px" wrap={{ base: "wrap", md: "nowrap" }}>
           <Flex direction="column" gap="15px">
             <Heading>Hi 👋 I`m Adriana</Heading>
             <Text fontSize="xl">
@@ -65,18 +70,20 @@ function Homepage() {
               </Link>
             </Flex>
           </Flex>
-          <Image
-            src="profilePicture.jpg"
-            alt="Profile picture"
-            boxSize="300px"
-            borderRadius="3xl"
-          />
+          <Box boxSize="300px" flexShrink={0}>
+            <Image
+              src="profilePicture.jpg"
+              alt="Profile picture"
+              borderRadius="3xl"
+            />
+          </Box>
         </Flex>
 
         <Button
           variant="solid"
           size="lg"
           colorScheme="orange"
+          mt="25px"
           onClick={handleGoToMyWork}
         >
           View my work

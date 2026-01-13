@@ -4,7 +4,14 @@ import AdminCard from "../ui/AdminCard";
 
 function MyWork() {
   return (
-    <Flex gap="25px" my="155px" w="full" justify="center">
+    <Flex
+      gap="25px"
+      my="100px"
+      px="15px"
+      w="full"
+      justify="center"
+      wrap={{ base: "wrap", lg: "nowrap" }}
+    >
       <AdrielleCard />
       <AdminCard />
     </Flex>
