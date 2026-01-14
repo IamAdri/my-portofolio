@@ -45,8 +45,7 @@ function Homepage() {
               <Text as="b" color="blue.700">
                 Junior Front-End Developer
               </Text>{" "}
-              passionate about passionate about turning ideas into responsive
-              and clean websites!
+              passionate about turning ideas into responsive and clean websites!
             </Text>
             <Flex gap="15px" my="25px">
               <JavaScript size={35} />
