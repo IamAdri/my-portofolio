@@ -48,6 +48,17 @@ function AdminCard() {
               delete existing products, add new product.
             </ListItem>
             <ListItem>
+              {" "}
+              <Text as="b" color="blue.700">
+                Filter
+              </Text>{" "}
+              and{" "}
+              <Text as="b" color="blue.700">
+                sort
+              </Text>{" "}
+              products based on available options.
+            </ListItem>
+            <ListItem>
               Show{" "}
               <Text as="b" color="blue.700">
                 charts
